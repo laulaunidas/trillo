@@ -2,37 +2,62 @@
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
-  box-shadow: var(--shadow-dark); // 0 en x, 20 px en y, 60px de blur, 30% opacité
+  box-shadow: var(
+    --shadow-dark
+  ); // 0 en x, 20 px en y, 60px de blur, 30% opacité
 
   // ! tesing purpose
   min-height: 50rem;
 }
 
 .header {
-    font-size: 1.4rem;
-    height: 7rem;
-    background-color: #fff;
-    border-bottom: 1px solid var(--color-grey-light-2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-    display: flex;
+  display: flex;
 }
 
 .sidebar {
-    flex: 0 0 18%;//grow shrink basis
-    background-color: var(--color-grey-dark-1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; // permet de coller le legal tout en bas
+  flex: 0 0 18%; //grow shrink basis
+  background-color: var(--color-grey-dark-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // permet de coller le legal tout en bas
 }
 
 .hotel-view {
-    flex: 1;// prends le reste de la place
-    background-color: #fff;
-    height: 80rem;
- 
+  flex: 1; // prends le reste de la place
+  background-color: #fff;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+  font-size: 1.4rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  background-color: white;
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  padding: 3rem;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  
+  flex: 1; //prends le reste de la place
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
